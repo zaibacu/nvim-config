@@ -1,11 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/syntastic' " Syntax highlight
-Plug 'vim-airline/vim-airline' " Status bar
+Plug 'vim-airline/vim-airline' " Status barA
 Plug 'valloric/youcompleteme' " Autocompletion
 Plug 'tpope/vim-fugitive' " GIT plugin
 
 Plug 'nvie/vim-flake8'	" Python linter
+Plug 'scrooloose/nerdtree' " Directory explorer
 
 
 " Initialize plugin system
@@ -24,3 +25,9 @@ let g:python3_host_prog = 'python3'
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" NerdTree
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+map <S-e> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
