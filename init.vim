@@ -8,6 +8,9 @@ Plug 'tpope/vim-fugitive' " GIT plugin
 Plug 'nvie/vim-flake8'	" Python linter
 Plug 'scrooloose/nerdtree' " Directory explorer
 
+" Theme
+Plug 'nightsense/vim-crunchbang'
+
 
 " Initialize plugin system
 call plug#end()
@@ -31,3 +34,7 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 map <S-e> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Set Theme
+colorscheme crunchbang
+set termguicolors
