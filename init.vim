@@ -14,6 +14,8 @@ Plug 'vim-ruby/vim-ruby' " Ruby stuff
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
+Plug 'tpope/vim-sensible' " Some defaults for VIM settings
+
 " Theme
 Plug 'nightsense/vim-crunchbang'
 
