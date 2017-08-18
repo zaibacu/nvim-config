@@ -8,6 +8,12 @@ Plug 'tpope/vim-fugitive' " GIT plugin
 Plug 'nvie/vim-flake8'	" Python linter
 Plug 'scrooloose/nerdtree' " Directory explorer
 
+Plug 'vim-ruby/vim-ruby' " Ruby stuff
+
+" Markdown Stuff
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " Theme
 Plug 'nightsense/vim-crunchbang'
 
@@ -45,3 +51,4 @@ nmap <silent> <A-Right> :wincmd l<CR>
 " Set Theme
 colorscheme crunchbang
 set termguicolors
+
