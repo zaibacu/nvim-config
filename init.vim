@@ -16,6 +16,8 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'tpope/vim-sensible' " Some defaults for VIM settings
 
+Plug 'yggdroot/indentline' " Show indetation
+
 " Theme
 Plug 'nightsense/vim-crunchbang'
 
@@ -44,10 +46,10 @@ map <S-e> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Navigation
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nmap <silent> <S-Up> :wincmd k<CR>
+nmap <silent> <S-Down> :wincmd j<CR>
+nmap <silent> <S-Left> :wincmd h<CR>
+nmap <silent> <S-Right> :wincmd l<CR>
 
 
 " Set Theme
